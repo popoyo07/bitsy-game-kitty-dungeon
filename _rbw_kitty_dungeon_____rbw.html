@@ -6,10 +6,10 @@
 
 <meta charset="UTF-8">
 
-<title>Kitty dungeon !!</title>
+<title>{rbw}Kitty dungeon !!{/rbw}</title>
 
 <script type="text/bitsyGameData" id="exportedGameData">
-Kitty dungeon !!
+{rbw}Kitty dungeon !!{/rbw}
 
 # BITSY VERSION 8.12
 
@@ -737,18 +737,27 @@ Thanks for  {wvy}Saving me !! {wvy}
 NAME key dialog
 
 DLG 3
-OOOOH you found a {wvy}hidden Key{wvy} 
+OOOOH you found a {wvy}hidden Cat Key{wvy} {item "1" 10}
 NAME hidden item dialog
 
 DLG 5
 """
 ...{
+  - {item "2"} == 1 ?
+    You {rbw}scaped!!! {/rbw} ... the cats died tho ... 
+}{
   - {item "1"} == 3 ?
       {rbw} scaped!!!{/rbw} and saved the {wvy}cats ;D{/wvy}
 }{
-  - {item "2"} == 1 ?
-    You {rbw}scaped!!! {/rbw} ... the cats died tho ... 
-  - else ?
+  - {item "1"} == 1 ?
+    You fell into a {shk}trap !!! {/shk}
+    It would have helped to have extra paws
+}{
+  - {item "1"} == 2 ?
+    You fell into a {shk}trap !!! {/shk}
+    It would have helped to have extra paws
+}{
+  - {item "1"} == 0 ?
     You fell into a {shk}trap !!! {/shk}
     It would have helped to have extra paws
 }
