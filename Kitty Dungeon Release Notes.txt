@@ -1,0 +1,21 @@
+Release Notes 
+
+Game Project: Before the Journey
+Creator: Miguel Pineda
+Version: 2.0 
+Date: 01/22/2025
+
+New features 
+Introduced 3 new decoy NPCs. 
+Added dialog explaining what is going on in the game. 
+
+Fixes
+Now the secret and regular ending does not display the losing screen.
+Text effects display to the right words
+
+Improvements  
+Changed color pallet of each room.
+
+Known Bugs 
+None reported 
+
